@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Set Node.js version
+        run: echo "NODE_VERSION=20" >> $GITHUB_ENV
+
       - name: Install dependancies
         run: npm install
 
