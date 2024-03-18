@@ -1,0 +1,33 @@
+{
+  "name": "nasa-mission-api",
+  "version": "1.0.0",
+  "description": "NASA Control API",
+  "main": "src/server.js",
+  "scripts": {
+    "watch": "nodemon src/server.js",
+    "test-watch": "jest --watch",
+    "start": "node src/server.js",
+    "test": "jest",
+    "cluster": "pm2 start src/server.js -i max -l pm2.logs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "jest": "^29.7.0",
+    "morgan": "^1.10.0",
+    "pm2": "^5.3.1"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.4"
+  }
+}
